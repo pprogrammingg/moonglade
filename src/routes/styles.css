@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
 	--main-radius: 5px;
     --main-padding: 0rem;
-	--text-primary: #b6b6b6;
-    --text-secondary: #ececec;
+	--text-primary: #ececec;
+    --text-secondary: #b6b6b6;
     --bg-primary: #23232e;
     --bg-secondary: #1c2122cb;
 	--bg-tertiary: #2c2c39;
+	--font-size-primary: 0.81rem;
+	--font-size-secondary: 1.2rem;
     --transition-speed: 600ms;
 }
 
@@ -15,8 +17,8 @@ body {
   /* font */
   height: 100%;
   margin: 0;
-  font-family: "Pixelify Sans";
-  font-weight:600;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
   box-sizing: border-box;
   background-color: black;
 }

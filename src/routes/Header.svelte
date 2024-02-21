@@ -4,8 +4,8 @@
 
 <header>
 	<nav id="navBar">
-		<a href="/" id="logo">
-			<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<a href="/">
+			<svg  id="logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="SVGRepo_bgCarrier" stroke-width="0">
 				</g>
 				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -19,6 +19,10 @@
 		</a>
 		<span id="links">
 			<a href="/">TRADE</a>
+			<a href="/nested/route">Nested route</a>
+			<a href="/error">Errors</a>
+			<a href="/stores">Stores</a>
+			<a href="/locals">Locals</a>
 			<a href="/collections">COLLECTIONS</a>
 			<a href="/mint">MINT</a>
 		</span>
@@ -29,7 +33,7 @@
 			<input id="searchInput" type="text" placeholder="Search collections / wallet">
 			<span id="shortcut">
 				<!-- On macOS: '⌘K', On Windows: 'Ctrl+K' -->
-				<span>⌘ + k</span>
+				⌘ K
 			</span>
 		</span>
 	</nav>
@@ -47,37 +51,42 @@
 		height: 100%;
 	}
 	
-	#navBar a svg {
-		fill: var(--text-primary); 
-		height: 1.5rem; 
-		width: 1.5rem; 
-		vertical-align: middle; /* Align the SVG vertically within the line */
-	}
 	
 	#navBar a {
 		text-decoration: none;
 		color: var(--text-primary);
-		margin: 0 0.72rem;
+		margin: 0 0.5rem;
+		font-size: var(--font-size-primary);
+		letter-spacing: 0.07rem;
+	}
+
+	#logo {
+		fill: var(--text-primary); 
+		height: 1.71rem; 
+		width: 1.71rem; 
+		vertical-align: middle; /* Align the SVG vertically within the line */
+		margin: 0.36rem;
 	}
 
 	#searchBar {
 		display: flex;
 		align-items: center;
 		position: relative;
-		width: clamp(35%, 40%, 90%);
+		width: clamp(20%, 50%, 90%);
 		height: 2.25rem;
 		background-color: var(--bg-tertiary); 
 		outline: none;
 		color: inherit;
-		font-size: 1.35rem;
+		font-size: var(--font-size-primary);
 		margin: 0.5rem auto;
 		border: 1px solid var(--bg-tertiary);
+		border-radius: var(--main-radius);
 		transition: border 0.36s ease;
     }
 
 	#searchBar:hover {
-		border: 1px solid #b6b6b6;
-		border-radius: 5px;
+		border: 1px solid var(--text-primary);
+		border-radius: var(--main-radius);
 	}
 	
 	#searchInput {
@@ -88,14 +97,14 @@
 		background: none;
 		border: none;
 		outline: none;
-		color: inherit;
 		font-family: inherit; 
 		font-size: inherit;
 		transition: border 3s ease;
+		color: var(--text-primary);
     }
 
     #searchIcon {
-		fill: #b6b6b6;
+		fill: var(--text-primary);
 		width:2rem;
 		height:2rem;
     }
@@ -103,21 +112,27 @@
     #shortcut {
 		margin-right: 0.25em;
 		color: var(--text-primary);
-		font-size: inherit;
+		font-family: Arial;
+		font-size: 1rem;
     }
 
     ::placeholder {
-		color: var(--text-primary);
+		color: var(--text-secondary);
     }
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 850px) {
 		#searchBar {
 			width: 95%;
-			height: 1.8rem;
+			height: 2rem;
+		}
+
+		#logo {
+			height: 2.1rem; 
+			width: 2.1rem; 
 		}
 
 		#searchInput {
-			font-size: 1.62rem;
+			font-size: var(--font-size-secondary);
 		}
 
 		#links, #shortcut {
