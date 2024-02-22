@@ -19,10 +19,6 @@
 		</a>
 		<span id="links">
 			<a href="/">TRADE</a>
-			<a href="/nested/route">Nested route</a>
-			<a href="/error">Errors</a>
-			<a href="/stores">Stores</a>
-			<a href="/locals">Locals</a>
 			<a href="/collections">COLLECTIONS</a>
 			<a href="/mint">MINT</a>
 		</span>
