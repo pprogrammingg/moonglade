@@ -4,7 +4,7 @@
 	import log from '$lib/utils/log'
 
 	export let data
-	log.layout('+layout.svelte')
+	// log.layout('+layout.svelte')
 	console.log(`+layout.svelte ${JSON.stringify(data, null, 2)}`);
 </script>
 

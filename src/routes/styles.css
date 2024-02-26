@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-	--main-radius: 5px;
-    --main-padding: 0rem;
-	--text-primary: #ececec;
-    --text-secondary: #b6b6b6;
+	--radius-primary: 0.27rem;
+    --padding-primary: 0rem;
+    --padding-secondary: 0.36rem;
+    --padding: 0.36rem;
+	--text-color-primary: #ececec;
+    --text-color-secondary: #b6b6b6;
     --bg-primary: #23232e;
-    --bg-secondary: #1c2122cb;
-	--bg-tertiary: #2c2c39;
-	--font-size-primary: 0.81rem;
-	--font-size-secondary: 1.2rem;
+    --bg-secondary: #161a1bcb;
+	--bg-tertiary: #332737;
+	--font-size-primary: 1rem;
+	--font-size-secondary: 1.5rem;
     --transition-speed: 600ms;
 }
 
@@ -26,7 +28,7 @@ body {
 .app {
 	display: grid;
 	height: 100vh;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 0.75fr 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 1.5fr 1.2fr 0.2fr;
 	grid-template-areas:
 		"header header header header"
@@ -50,6 +52,7 @@ header {
 main {
     background: #98a8a8;
     grid-area: main;
+    overflow-y: auto;
 }
   
 #sidebar {

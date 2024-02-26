@@ -50,14 +50,14 @@
 	
 	#navBar a {
 		text-decoration: none;
-		color: var(--text-primary);
+		color: var(--text-color-primary);
 		margin: 0 0.5rem;
 		font-size: var(--font-size-primary);
 		letter-spacing: 0.07rem;
 	}
 
 	#logo {
-		fill: var(--text-primary); 
+		fill: var(--text-color-primary); 
 		height: 1.71rem; 
 		width: 1.71rem; 
 		vertical-align: middle; /* Align the SVG vertically within the line */
@@ -76,13 +76,13 @@
 		font-size: var(--font-size-primary);
 		margin: 0.5rem auto;
 		border: 1px solid var(--bg-tertiary);
-		border-radius: var(--main-radius);
+		border-radius: var(--radius-primary);
 		transition: border 0.36s ease;
     }
 
 	#searchBar:hover {
-		border: 1px solid var(--text-primary);
-		border-radius: var(--main-radius);
+		border: 1px solid var(--text-color-primary);
+		border-radius: var(--radius-primary);
 	}
 	
 	#searchInput {
@@ -96,33 +96,33 @@
 		font-family: inherit; 
 		font-size: inherit;
 		transition: border 3s ease;
-		color: var(--text-primary);
+		color: var(--text-color-primary);
     }
 
     #searchIcon {
-		fill: var(--text-primary);
-		width:2rem;
-		height:2rem;
+		fill: var(--text-color-primary);
+		width:1.8rem;
+		height:1.8rem;
     }
 
     #shortcut {
 		margin-right: 0.25em;
-		color: var(--text-primary);
+		color: var(--text-color-primary);
 		font-family: Arial;
 		font-size: 1rem;
     }
 
     ::placeholder {
-		color: var(--text-secondary);
+		color: var(--text-color-secondary);
     }
 
-	@media only screen and (max-width: 850px) {
+	@media only screen and (max-width: 1500px) {
 		#searchBar {
-			width: 95%;
+			width: 90%;
 			height: 2rem;
 		}
 
-		#logo {
+		#logo, #searchIcon {
 			height: 2.1rem; 
 			width: 2.1rem; 
 		}
